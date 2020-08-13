@@ -1,0 +1,130 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2, h3 {
+	font-size: 2em;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	word-spacing: 3px;
+	line-height: 50px;
+	margin-bottom: 20px;
+}
+
+.container {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+.row, .secondrow .container {
+	display: flex;
+}
+
+.row-header {
+	justify-content: space-between;
+	padding: 40px 0;
+}
+
+.nav-menu li {
+	list-style: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.nav-menu li a {
+	display: inline-block;
+	color: #121212;
+	padding: 10px 25px;
+	font-family: Raleway, sans-serif;
+}
+
+.nav-menu li a:hover {
+	color: hsl(224, 93%, 58%);
+}
+
+content {
+	margin-top: 25px;
+}
+
+.contect-subscription, .secondrow .container .contect-subscription {
+	margin: auto;
+	margin-right: 100px;
+}
+
+.contect-subscription p, .secondrow .contect-subscription p {
+	color: #121212;
+	margin-bottom: 15px;
+	line-height: 25px;
+}
+
+.contect-subscription form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contect-subscription input[type="text"] {
+	display: inline;
+	padding: 10px;
+	flex: 2;
+	margin-right: 10px;
+}
+
+.contect-subscription input[type="button"] {
+	display: inline-block;
+	padding: 10px;
+	flex: 1;
+	border: none;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	background-color: hsl(224, 93%, 58%);
+	color: #fff;
+	box-shadow: 1px 1px 4px hsl(170, 45%, 43%);
+}
+
+.contect-subscription input[type="button"]:hover {
+	cursor: pointer;
+	background-color: hsl(224, 93%, 38%);
+}
+
+.secondrow {
+	margin-top: 150px;
+	padding: 100px 0;
+	background-color: hsl(240, 75%, 98%);
+	border-radius: 150px 0 0 0;
+}
+
+.secondrow .contect-subscription > p {
+	width: 90%;
+}
+
+.secondrow .contect-subscription a {
+	color: green;
+}
+
+.user-testimoni {
+	margin-top: 32px;
+	width: 70%;
+	padding: 28px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 20px #ddd;
+}
+
+.user-profile {
+	 display: flex;
+	 align-items: center;
+}
+
+.user-profile img {
+	width: 15%;
+	border-radius: 50%;
+	margin-right: 20px;
+}
