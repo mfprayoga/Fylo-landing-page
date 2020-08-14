@@ -24,7 +24,9 @@ h2, h3 {
 	margin: 0 auto;
 }
 
-.row, .secondrow .container {
+.row,
+.secondrow .container,
+.thirdrow .container {
 	display: flex;
 }
 
@@ -54,32 +56,40 @@ content {
 	margin-top: 25px;
 }
 
-.contect-subscription, .secondrow .container .contect-subscription {
+.flex {
+	flex: 1;
+}
+
+.content-subscription,
+.secondrow .container .content-subscription,
+.thirdrow .container .content-subscription {
 	margin: auto;
 	margin-right: 100px;
 }
 
-.contect-subscription p, .secondrow .contect-subscription p {
+.content-subscription p,
+.secondrow .content-subscription p,
+.thirdrow .container .content-subscription p {
 	color: #121212;
 	margin-bottom: 15px;
 	line-height: 25px;
 }
 
-.contect-subscription form {
+.content-subscription form {
 	display: flex;
 	justify-content: space-between;
 }
 
-.contect-subscription input[type="text"] {
-	display: inline;
-	padding: 10px;
+.content-subscription input[type="text"],
+.thirdrow input[type="text"] {
+	padding: 15px;
 	flex: 2;
 	margin-right: 10px;
 }
 
-.contect-subscription input[type="button"] {
-	display: inline-block;
-	padding: 10px;
+.content-subscription input[type="button"],
+.thirdrow input[type="button"] {
+	padding: 15px;
 	flex: 1;
 	border: none;
 	font-family: Raleway, sans-serif;
@@ -89,7 +99,7 @@ content {
 	box-shadow: 1px 1px 4px hsl(170, 45%, 43%);
 }
 
-.contect-subscription input[type="button"]:hover {
+.content-subscription input[type="button"]:hover {
 	cursor: pointer;
 	background-color: hsl(224, 93%, 38%);
 }
@@ -97,16 +107,16 @@ content {
 .secondrow {
 	margin-top: 150px;
 	padding: 100px 0;
-	background-color: hsl(240, 75%, 98%);
-	border-radius: 150px 0 0 0;
+	background: url("images/bg-curve-desktop.svg") center;
+	background-size: cover;
 }
 
-.secondrow .contect-subscription > p {
+.secondrow .content-subscription > p {
 	width: 90%;
 }
 
-.secondrow .contect-subscription a {
-	color: green;
+.secondrow .content-subscription a {
+	color: #5a8782;
 }
 
 .user-testimoni {
@@ -116,6 +126,7 @@ content {
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 0 20px #ddd;
+	font-family: Raleway;
 }
 
 .user-profile {
@@ -124,7 +135,94 @@ content {
 }
 
 .user-profile img {
-	width: 15%;
+	width: 10%;
 	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.user-profile span {
+	font-size: 0.8em;
+}
+
+.user-profile strong {
+	font-weight: 700;
+}
+
+.thirdrow {
+	margin-top: 0;
+	padding: 80px 0;
+	background-color: #575989;
+	color: #fff;
+}
+
+.thirdrow .container .content-subscription p {
+	color: #fff;
+}
+
+.thirdrow .flex form {
+	padding: 10px;
+}
+
+.thirdrow input[type="text"] {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 15px 25px;
+}
+
+.thirdrow input[type="button"] {
+	padding: 15px 25px;
+}
+
+footer {
+	background-color: #07043b;
+	padding: 80px 0 20px;
+	color: #fff;
+}
+
+footer .container {
+	display: flex;
+	flex-direction: column;
+
+}
+
+footer .container .footer-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.footer-menu .flex:not(:last-child) {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.footer-menu .flex:first-child {
+	margin-right: 200px;
+}
+
+.footer-menu .flex:first-child img {
 	margin-right: 20px;
+}
+
+.footer-menu .flex p {
+	margin-bottom: 20px;
+}
+
+.footer-menu .flex p a {
+	color: #fff;
+	font-family: Raleway, sans-serif;
+}
+
+.footer-menu .flex p a:hover {
+	color: #3065f8;
+}
+
+.footer-menu .social-menu img {
+	border: 1px solid #fff;
+	margin-right: 10px;
+	border-radius: 50%;
+	padding: 10px;
 }
